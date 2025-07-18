@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filtered Books</title>
+</head>
+<body>
+  <h1>Books with Sentiment: {{ sentiment }}</h1>
+
+  <a href="/">← Back to Dashboard</a>
+  <ul>
+    {% for book in books %}
+      <li><strong>{{ book['title'] }}</strong> by {{ book['authors'] }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

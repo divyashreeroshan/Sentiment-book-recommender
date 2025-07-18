@@ -1,0 +1,67 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #9ECAD6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4a90e2;
+  color: white;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+#sentiment-filter {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.search-box {
+  display: inline-block;
+}
+
+#search-input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 220px;
+  font-size: 1em;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.book-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
+.book-card.positive {
+  border-left: 6px solid #4CAF50;
+}
+.book-card.neutral {
+  border-left: 6px solid #FF9800;
+}
+.book-card.negative {
+  border-left: 6px solid #F44336;
+}
